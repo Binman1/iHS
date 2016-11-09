@@ -31,8 +31,8 @@ class SecondPageTBC: UITabBarController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         var tabFrame = self.tabBar.frame
-        tabFrame.size.height = 50
-        tabFrame.origin.y = self.view.frame.size.height - 50
+        tabFrame.size.height = 49
+        tabFrame.origin.y = self.view.frame.size.height - 49
         self.tabBar.frame = tabFrame
         
         
