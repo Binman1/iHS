@@ -194,7 +194,7 @@
 					EEDA151C1DD33AC0007D1F3F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Z377M45A22;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					EEDA15301DD33AC0007D1F3F = {
 						CreatedOnToolsVersion = 8.0;
@@ -421,6 +421,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ir.jahanmir.iHS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "daab38f3-b82d-431d-8184-d0fdf9a73319";
+				PROVISIONING_PROFILE_SPECIFIER = "iHS Dev";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -435,6 +437,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ir.jahanmir.iHS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "daab38f3-b82d-431d-8184-d0fdf9a73319";
+				PROVISIONING_PROFILE_SPECIFIER = "iHS Dev";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
