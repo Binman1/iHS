@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5B06B6941DD3490E004E9877 /* SecondPageTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06B6931DD3490E004E9877 /* SecondPageTBC.swift */; };
+		5B06B6961DD35BE0004E9877 /* SecondPageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06B6951DD35BE0004E9877 /* SecondPageNC.swift */; };
+		5B06B69A1DD35F0A004E9877 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06B6991DD35F0A004E9877 /* TopBar.swift */; };
+		5B06B69C1DD36199004E9877 /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B06B69B1DD36199004E9877 /* TopBar.xib */; };
 		EEDA15211DD33AC0007D1F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA15201DD33AC0007D1F3F /* AppDelegate.swift */; };
 		EEDA15231DD33AC0007D1F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA15221DD33AC0007D1F3F /* ViewController.swift */; };
 		EEDA15261DD33AC0007D1F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDA15241DD33AC0007D1F3F /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		5B06B6931DD3490E004E9877 /* SecondPageTBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageTBC.swift; sourceTree = "<group>"; };
+		5B06B6951DD35BE0004E9877 /* SecondPageNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageNC.swift; sourceTree = "<group>"; };
+		5B06B6991DD35F0A004E9877 /* TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		5B06B69B1DD36199004E9877 /* TopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
 		EEDA151D1DD33AC0007D1F3F /* iHS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDA15201DD33AC0007D1F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDA15221DD33AC0007D1F3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 		5B06B68F1DD3487B004E9877 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B06B6991DD35F0A004E9877 /* TopBar.swift */,
+				5B06B69B1DD36199004E9877 /* TopBar.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			children = (
 				EEDA15221DD33AC0007D1F3F /* ViewController.swift */,
 				5B06B6931DD3490E004E9877 /* SecondPageTBC.swift */,
+				5B06B6951DD35BE0004E9877 /* SecondPageNC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,6 +282,7 @@
 				EEDA152B1DD33AC0007D1F3F /* LaunchScreen.storyboard in Resources */,
 				EEDA15281DD33AC0007D1F3F /* Assets.xcassets in Resources */,
 				EEDA15261DD33AC0007D1F3F /* Main.storyboard in Resources */,
+				5B06B69C1DD36199004E9877 /* TopBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +309,9 @@
 			files = (
 				EEDA15231DD33AC0007D1F3F /* ViewController.swift in Sources */,
 				5B06B6941DD3490E004E9877 /* SecondPageTBC.swift in Sources */,
+				5B06B69A1DD35F0A004E9877 /* TopBar.swift in Sources */,
 				EEDA15211DD33AC0007D1F3F /* AppDelegate.swift in Sources */,
+				5B06B6961DD35BE0004E9877 /* SecondPageNC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
