@@ -9,8 +9,33 @@
 import UIKit
 
 @IBDesignable class TopBar: UIView {
-//    var view : UIView!
+
     
+    @IBOutlet weak var imgConnection: UIImageView!
+    
+    @IBOutlet weak var labelMessage: UILabel!
+    
+    /// Set Image for different kind of connections. (UIImage)
+    @IBInspectable var connectionImage:UIImage! {
+        set {
+            imgConnection.image = newValue
+        }
+        get {
+            return nil
+        }
+    }
+    
+    /// Set number of Messages. (Notifications) (String)
+    @IBInspectable var messageCount:String {
+        set {
+            labelMessage.text = newValue
+        }
+        get {
+            return labelMessage.text!
+        }
+        
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         createNib()
@@ -23,6 +48,9 @@ import UIKit
     
     
     @IBOutlet var view : UIView!
+    
+    
+    
     func createNib() {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "TopBar", bundle: bundle)
