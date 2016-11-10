@@ -157,6 +157,7 @@
 		5B06B6901DD34882004E9877 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5BCDCD671DD47FE000CC3372 /* Section 2 */,
 				5BCDCD5E1DD47FCB00CC3372 /* Section 1 */,
 			);
 			name = Controller;
@@ -191,7 +192,6 @@
 				5BCDCD601DD47FDE00CC3372 /* WelcomeVC.swift */,
 				5BCDCD611DD47FDE00CC3372 /* RegisterVC.swift */,
 				5BCDCD621DD47FDE00CC3372 /* BarcodeVC.swift */,
-				5BCDCD671DD47FE000CC3372 /* Section 2 */,
 			);
 			name = "Section 1";
 			sourceTree = "<group>";
