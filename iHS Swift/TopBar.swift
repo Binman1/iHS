@@ -8,8 +8,8 @@
 
 import UIKit
 
-class TopBar: UIView {
-    var view : UIView!
+@IBDesignable class TopBar: UIView {
+//    var view : UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +22,7 @@ class TopBar: UIView {
     }
     
     
-    
+    @IBOutlet var view : UIView!
     func createNib() {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "TopBar", bundle: bundle)
@@ -35,5 +35,5 @@ class TopBar: UIView {
         addSubview(view)
     }
     
-
+    
 }
