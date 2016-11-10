@@ -18,6 +18,7 @@ class SecondPageTBC: UITabBarController {
         
         selectItemImage()
         setUpTabBar()
+        setItemNames(["1" , "2" , "3" , "4"])
         
         
     }
@@ -31,15 +32,12 @@ class SecondPageTBC: UITabBarController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         var tabFrame = self.tabBar.frame
-        tabFrame.size.height = 49
-        tabFrame.origin.y = self.view.frame.size.height - 49
+        tabFrame.size.height = 80
+        tabFrame.origin.y = self.view.frame.size.height - 80
         self.tabBar.frame = tabFrame
-        
-        
-        
+
         
     }
-    
     
     /// Set Tabbar Item Images
     func selectItemImage() {
@@ -71,7 +69,8 @@ class SecondPageTBC: UITabBarController {
     func setUpTabBar() {
         UITabBar.appearance().barTintColor = UIColor.whiteColor()
         UITabBar.appearance().shadowImage = UIImage()
-        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage(named: "tab-bar-bg")
+        
         
     }
     
