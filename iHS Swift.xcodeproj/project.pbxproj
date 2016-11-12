@@ -22,6 +22,8 @@
 		5BCDCD711DD47FF600CC3372 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCD6C1DD47FF600CC3372 /* SettingVC.swift */; };
 		9076CD0CDE56C977F16A007A /* libPods-iHS SwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC69544FCADE95E58F157AC /* libPods-iHS SwiftTests.a */; };
 		911903B57F293EBD6D3B3C27 /* libPods-iHS Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE73A0A9454D190F3B4AF36 /* libPods-iHS Swift.a */; };
+		EE0B37541DD70C86002687AA /* JsonMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B37521DD70C86002687AA /* JsonMaker.swift */; };
+		EE0B37551DD70C86002687AA /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B37531DD70C86002687AA /* JsonSerializer.swift */; };
 		EE0D95E81DD45952004581C4 /* IHS15.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EE0D95E71DD45952004581C4 /* IHS15.sqlite */; };
 		EE0D95EA1DD45AD1004581C4 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D95E91DD45AD1004581C4 /* A.swift */; };
 		EE0D95F01DD45BAA004581C4 /* Socket.c in Sources */ = {isa = PBXBuildFile; fileRef = EE0D95ED1DD45BAA004581C4 /* Socket.c */; };
@@ -70,6 +72,8 @@
 		A5CC00DA651E7762CE8EF54B /* libPods-iHS SwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iHS SwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1122BBDB93314F843980D19 /* Pods-iHS Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHS Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHS Swift/Pods-iHS Swift.release.xcconfig"; sourceTree = "<group>"; };
 		DFC69544FCADE95E58F157AC /* libPods-iHS SwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iHS SwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0B37521DD70C86002687AA /* JsonMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMaker.swift; sourceTree = "<group>"; };
+		EE0B37531DD70C86002687AA /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
 		EE0D95E71DD45952004581C4 /* IHS15.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = IHS15.sqlite; sourceTree = "<group>"; };
 		EE0D95E91DD45AD1004581C4 /* A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 		EE0D95EC1DD45BA9004581C4 /* iHS Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHS Swift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -216,6 +220,15 @@
 			name = "Section 2";
 			sourceTree = "<group>";
 		};
+		EE0B37511DD70C7A002687AA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B37521DD70C86002687AA /* JsonMaker.swift */,
+				EE0B37531DD70C86002687AA /* JsonSerializer.swift */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		EE0D95E31DD45475004581C4 /* DB */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +240,7 @@
 		EE0D95E41DD45480004581C4 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				EE0B37511DD70C7A002687AA /* Libs */,
 				EE0D95EB1DD45B9C004581C4 /* Socket */,
 			);
 			name = Net;
@@ -585,6 +599,7 @@
 				EE0D95F11DD45BAA004581C4 /* SocketManager.swift in Sources */,
 				5BCDCD701DD47FF600CC3372 /* ScenarioVC.swift in Sources */,
 				5BCDCD631DD47FDE00CC3372 /* LanguageVC.swift in Sources */,
+				EE0B37541DD70C86002687AA /* JsonMaker.swift in Sources */,
 				EE0D95F41DD46076004581C4 /* DBManager.swift in Sources */,
 				5BCDCD6D1DD47FF600CC3372 /* SecondPageTBC.swift in Sources */,
 				5B06B69A1DD35F0A004E9877 /* TopBar.swift in Sources */,
@@ -595,6 +610,7 @@
 				5BCDCD661DD47FDE00CC3372 /* BarcodeVC.swift in Sources */,
 				5BCDCD6F1DD47FF600CC3372 /* DevicesVC.swift in Sources */,
 				EEDA15211DD33AC0007D1F3F /* AppDelegate.swift in Sources */,
+				EE0B37551DD70C86002687AA /* JsonSerializer.swift in Sources */,
 				5BCDCD641DD47FDE00CC3372 /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
