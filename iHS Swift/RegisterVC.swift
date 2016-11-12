@@ -28,13 +28,13 @@ class RegisterVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /// Arash : Dismiss keyboard.
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesBegan(touches, withEvent: event)
         view.endEditing(true)
     }
     
-    /// Set Edge Gestures
+    /// Arash : Set Edge Gestures
     func setGestures() {
         let leftGestureScreen = UIPanGestureRecognizer(target: self, action: #selector(goToWelcomeVC))
         view.addGestureRecognizer(leftGestureScreen)
@@ -47,20 +47,15 @@ class RegisterVC: UIViewController {
             dismissViewControllerAnimated(true, completion: nil)
         }
     }
-    
-    /// Dismiss keyboard after tap on view.
-    func dismissKeyboard() {
-        view.endEditing(true)
-        
-    }
+
     
     
-    /// Register Button
+    /// Arash : Register Button
     @IBAction func btnRegister(sender: UIButton) {
         if edtRegisterName.text?.characters.count > 0 {
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let barcodeVC = storyBoard.instantiateViewControllerWithIdentifier("barcodeVC") as! BarcodeVC
-            var transitionStyle = UIModalTransitionStyle.FlipHorizontal
+            let transitionStyle = UIModalTransitionStyle.FlipHorizontal
             barcodeVC.modalTransitionStyle = transitionStyle
             self.presentViewController(barcodeVC, animated: true, completion: nil)
         }else {
