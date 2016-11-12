@@ -14,6 +14,7 @@
 		5B6247C31DD700BB00760F10 /* CellRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6247C21DD700BB00760F10 /* CellRooms.swift */; };
 		5B6247C51DD700D500760F10 /* SectionRooms.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B6247C41DD700D500760F10 /* SectionRooms.xib */; };
 		5B6247C71DD700E800760F10 /* SectionRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6247C61DD700E800760F10 /* SectionRooms.swift */; };
+		5B6247CA1DD7109F00760F10 /* StructRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6247C91DD7109F00760F10 /* StructRooms.swift */; };
 		5BCDCD5D1DD47FAE00CC3372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */; };
 		5BCDCD631DD47FDE00CC3372 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCD5F1DD47FDE00CC3372 /* LanguageVC.swift */; };
 		5BCDCD641DD47FDE00CC3372 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCD601DD47FDE00CC3372 /* WelcomeVC.swift */; };
@@ -63,6 +64,7 @@
 		5B6247C21DD700BB00760F10 /* CellRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRooms.swift; sourceTree = "<group>"; };
 		5B6247C41DD700D500760F10 /* SectionRooms.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionRooms.xib; sourceTree = "<group>"; };
 		5B6247C61DD700E800760F10 /* SectionRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRooms.swift; sourceTree = "<group>"; };
+		5B6247C91DD7109F00760F10 /* StructRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructRooms.swift; sourceTree = "<group>"; };
 		5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5BCDCD5F1DD47FDE00CC3372 /* LanguageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		5BCDCD601DD47FDE00CC3372 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		5B06B6911DD3488A004E9877 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B6247C81DD7106D00760F10 /* Struct Model */,
 				EE0D95E51DD45486004581C4 /* Models */,
 				EE0D95E41DD45480004581C4 /* Net */,
 				EE0D95E31DD45475004581C4 /* DB */,
@@ -218,6 +221,14 @@
 				5B6247C21DD700BB00760F10 /* CellRooms.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		5B6247C81DD7106D00760F10 /* Struct Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B6247C91DD7109F00760F10 /* StructRooms.swift */,
+			);
+			name = "Struct Model";
 			sourceTree = "<group>";
 		};
 		5BBA15B91DD61E5E00983D23 /* TopBar */ = {
@@ -632,6 +643,7 @@
 				5B6247C31DD700BB00760F10 /* CellRooms.swift in Sources */,
 				5B6247C71DD700E800760F10 /* SectionRooms.swift in Sources */,
 				5BCDCD6E1DD47FF600CC3372 /* FavoritesVC.swift in Sources */,
+				5B6247CA1DD7109F00760F10 /* StructRooms.swift in Sources */,
 				5BCDCD661DD47FDE00CC3372 /* BarcodeVC.swift in Sources */,
 				5BCDCD6F1DD47FF600CC3372 /* DevicesVC.swift in Sources */,
 				EEDA15211DD33AC0007D1F3F /* AppDelegate.swift in Sources */,
