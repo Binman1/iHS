@@ -15,10 +15,10 @@ import UIKit
 
 class LanguageVC: UIViewController {
     
-    @IBOutlet weak var btnEn: UIButton!
-    @IBOutlet weak var btnIr: UIButton!
-    @IBOutlet weak var btnAr: UIButton!
-    @IBOutlet weak var btnTr: UIButton!
+    @IBOutlet weak var outletEn: UIButton!
+    @IBOutlet weak var outletIr: UIButton!
+    @IBOutlet weak var outletAr: UIButton!
+    @IBOutlet weak var outletTr: UIButton!
     
     
     override func viewDidLoad() {
@@ -36,11 +36,11 @@ class LanguageVC: UIViewController {
     
     
     
-
+    
     
     
     /// Set Edge Gestures
-     func setGestures() {
+    func setGestures() {
         let rightGestureScreen = UIPanGestureRecognizer(target: self, action: #selector(goToWelcomeVC))
         
         view.addGestureRecognizer(rightGestureScreen)
@@ -48,7 +48,7 @@ class LanguageVC: UIViewController {
     }
     
     ///selector func
-     func goToWelcomeVC(sender : UIPanGestureRecognizer) {
+    func goToWelcomeVC(sender : UIPanGestureRecognizer) {
         let transition = sender.translationInView(self.view)
         
         if transition.x < 0 {
@@ -59,5 +59,49 @@ class LanguageVC: UIViewController {
             self.presentViewController(welcomeVC, animated: true, completion: nil)
         }
     }
+    
+    
+    
+    
+    /// Language Buttons
+    @IBAction func btnEn(sender: UIButton) {
+        print("AA")
+        outletEn.setBackgroundImage(UIImage(named: "En"), forState: .Normal)
+        outletAr.setBackgroundImage(UIImage(named: "ArGray"), forState: .Normal)
+        outletIr.setBackgroundImage(UIImage(named: "FaGray"), forState: .Normal)
+        outletTr.setBackgroundImage(UIImage(named: "TrGray"), forState: .Normal)
+        
+        
+    }
+    
+    @IBAction func btnIr(sender: UIButton) {
+        outletIr.setBackgroundImage(UIImage(named: "Fa"), forState: .Normal)
+        outletEn.setBackgroundImage(UIImage(named: "EnGray"), forState: .Normal)
+        outletAr.setBackgroundImage(UIImage(named: "ArGray"), forState: .Normal)
+        outletTr.setBackgroundImage(UIImage(named: "TrGray"), forState: .Normal)
+        
+        
+    }
+    
+    @IBAction func btnAr(sender: UIButton) {
+        outletAr.setBackgroundImage(UIImage(named: "Ar"), forState: .Normal)
+        outletEn.setBackgroundImage(UIImage(named: "EnGray"), forState: .Normal)
+        outletIr.setBackgroundImage(UIImage(named: "FaGray"), forState: .Normal)
+        outletTr.setBackgroundImage(UIImage(named: "TrGray"), forState: .Normal)
+        
+    }
+    
+    @IBAction func btnTr(sender: UIButton) {
+        outletTr.setBackgroundImage(UIImage(named: "Tr"), forState: .Normal)
+        outletEn.setBackgroundImage(UIImage(named: "EnGray"), forState: .Normal)
+        outletAr.setBackgroundImage(UIImage(named: "ArGray"), forState: .Normal)
+        outletIr.setBackgroundImage(UIImage(named: "FaGray"), forState: .Normal)
+        
+        
+    }
+    
+    
+    
+    
     
 }

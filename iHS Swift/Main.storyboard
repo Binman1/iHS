@@ -171,7 +171,10 @@
                                             <constraint firstAttribute="height" constant="50" id="932-Ps-VXM"/>
                                             <constraint firstAttribute="width" constant="50" id="CVl-MT-Sab"/>
                                         </constraints>
-                                        <state key="normal" image="EnGray"/>
+                                        <state key="normal" backgroundImage="EnGray"/>
+                                        <connections>
+                                            <action selector="btnEn:" destination="9LS-o1-lXS" eventType="touchUpInside" id="tkA-kT-TML"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-lb-HSu">
                                         <rect key="frame" x="133" y="6" width="50" height="50"/>
@@ -179,7 +182,10 @@
                                             <constraint firstAttribute="height" constant="50" id="I7y-oI-Gam"/>
                                             <constraint firstAttribute="width" constant="50" id="okv-hB-3dl"/>
                                         </constraints>
-                                        <state key="normal" image="Fa"/>
+                                        <state key="normal" backgroundImage="Fa"/>
+                                        <connections>
+                                            <action selector="btnIr:" destination="9LS-o1-lXS" eventType="touchUpInside" id="yS3-EM-mA0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uba-PK-wbh">
                                         <rect key="frame" x="191" y="6" width="50" height="50"/>
@@ -187,7 +193,10 @@
                                             <constraint firstAttribute="height" constant="50" id="KhW-MK-VdR"/>
                                             <constraint firstAttribute="width" constant="50" id="eIk-x7-EcH"/>
                                         </constraints>
-                                        <state key="normal" image="ArGray"/>
+                                        <state key="normal" backgroundImage="ArGray"/>
+                                        <connections>
+                                            <action selector="btnAr:" destination="9LS-o1-lXS" eventType="touchUpInside" id="UrF-KS-nRC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-jy-dxv">
                                         <rect key="frame" x="249" y="6" width="50" height="50"/>
@@ -195,7 +204,10 @@
                                             <constraint firstAttribute="width" constant="50" id="fRX-Te-OSv"/>
                                             <constraint firstAttribute="height" constant="50" id="jvm-jk-LcQ"/>
                                         </constraints>
-                                        <state key="normal" image="TrGray"/>
+                                        <state key="normal" backgroundImage="TrGray"/>
+                                        <connections>
+                                            <action selector="btnTr:" destination="9LS-o1-lXS" eventType="touchUpInside" id="eU6-lD-p61"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -229,10 +241,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnAr" destination="uba-PK-wbh" id="CcU-jJ-h1g"/>
-                        <outlet property="btnEn" destination="dAW-Yu-mlA" id="M3Q-7E-5sz"/>
-                        <outlet property="btnIr" destination="lvm-lb-HSu" id="XqN-2l-8zx"/>
-                        <outlet property="btnTr" destination="Ncr-jy-dxv" id="KOg-sO-chy"/>
+                        <outlet property="outletAr" destination="uba-PK-wbh" id="7fu-aH-AmN"/>
+                        <outlet property="outletEn" destination="dAW-Yu-mlA" id="KCe-GY-xi8"/>
+                        <outlet property="outletIr" destination="lvm-lb-HSu" id="FnW-Sh-Co8"/>
+                        <outlet property="outletTr" destination="Ncr-jy-dxv" id="Z8c-5K-uEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7b-IT-OaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,25 +295,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="a4p-3N-OCY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-II-viv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-II-viv">
                                 <rect key="frame" x="64" y="314" width="246" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="NF3-al-61N"/>
+                                    <constraint firstAttribute="height" constant="30" id="vHV-Iz-jaV"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-bo-EAB">
-                                <rect key="frame" x="164" y="352" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-hh-XUF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-hh-XUF">
                                 <rect key="frame" x="64" y="271" width="246" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="F8T-5a-ta6"/>
+                                    <constraint firstAttribute="height" constant="35" id="sjd-CX-rcI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-bo-EAB">
+                                <rect key="frame" x="142" y="352" width="90" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="MB6-iQ-dUX"/>
+                                    <constraint firstAttribute="width" constant="90" id="toS-HY-VEE"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="BtnRegister"/>
+                                <connections>
+                                    <action selector="btnRegister:" destination="MsH-mb-LDw" eventType="touchUpInside" id="M4W-Oc-CLm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -309,6 +333,12 @@
                             <constraint firstAttribute="trailing" secondItem="a4p-3N-OCY" secondAttribute="trailing" id="Jme-9o-QYH"/>
                             <constraint firstItem="ch4-2A-Psz" firstAttribute="top" secondItem="a4p-3N-OCY" secondAttribute="bottom" id="Muo-0h-BDQ"/>
                             <constraint firstItem="a4p-3N-OCY" firstAttribute="top" secondItem="G66-yd-ZKi" secondAttribute="top" id="THt-aW-2qJ"/>
+                            <constraint firstItem="9Xo-hh-XUF" firstAttribute="centerX" secondItem="G66-yd-ZKi" secondAttribute="centerX" id="UUb-IK-zY4"/>
+                            <constraint firstItem="LNe-II-viv" firstAttribute="top" secondItem="9Xo-hh-XUF" secondAttribute="bottom" constant="8" id="hsy-OK-w5J"/>
+                            <constraint firstItem="9Xo-hh-XUF" firstAttribute="centerY" secondItem="G66-yd-ZKi" secondAttribute="centerY" constant="-45" id="j4m-ml-bRI"/>
+                            <constraint firstItem="fl9-bo-EAB" firstAttribute="centerX" secondItem="G66-yd-ZKi" secondAttribute="centerX" id="la2-tK-Q0o"/>
+                            <constraint firstItem="fl9-bo-EAB" firstAttribute="top" secondItem="LNe-II-viv" secondAttribute="bottom" constant="8" id="oFh-pe-9mU"/>
+                            <constraint firstItem="LNe-II-viv" firstAttribute="centerX" secondItem="G66-yd-ZKi" secondAttribute="centerX" id="sXf-NF-Br8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -367,6 +397,7 @@
         <image name="2" width="320" height="568"/>
         <image name="3" width="320" height="568"/>
         <image name="ArGray" width="128" height="128"/>
+        <image name="BtnRegister" width="120" height="40"/>
         <image name="EnGray" width="128" height="128"/>
         <image name="Fa" width="128" height="128"/>
         <image name="TrGray" width="128" height="128"/>

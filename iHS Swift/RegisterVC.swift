@@ -41,4 +41,11 @@ class RegisterVC: UIViewController {
     }
     
     
+    /// Register Button
+    @IBAction func btnRegister(sender: UIButton) {
+        
+        
+    }
+    
+    
 }
