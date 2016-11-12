@@ -168,64 +168,72 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAW-Yu-mlA">
                                         <rect key="frame" x="75" y="6" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="T21-YS-eb7"/>
-                                            <constraint firstAttribute="width" constant="50" id="q8T-wU-2PP"/>
+                                            <constraint firstAttribute="height" constant="50" id="932-Ps-VXM"/>
+                                            <constraint firstAttribute="width" constant="50" id="CVl-MT-Sab"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="En"/>
+                                        <state key="normal" image="EnGray"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-lb-HSu">
                                         <rect key="frame" x="133" y="6" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="14g-mj-QD4"/>
-                                            <constraint firstAttribute="height" constant="50" id="M8R-C5-IK0"/>
+                                            <constraint firstAttribute="height" constant="50" id="I7y-oI-Gam"/>
+                                            <constraint firstAttribute="width" constant="50" id="okv-hB-3dl"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="Fa"/>
+                                        <state key="normal" image="Fa"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uba-PK-wbh">
                                         <rect key="frame" x="191" y="6" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="KIh-IP-qTA"/>
-                                            <constraint firstAttribute="height" constant="50" id="xlP-x9-SDP"/>
+                                            <constraint firstAttribute="height" constant="50" id="KhW-MK-VdR"/>
+                                            <constraint firstAttribute="width" constant="50" id="eIk-x7-EcH"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="Ar"/>
+                                        <state key="normal" image="ArGray"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-jy-dxv">
                                         <rect key="frame" x="249" y="6" width="50" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="U9V-G3-E7t"/>
-                                            <constraint firstAttribute="height" constant="50" id="f2X-fh-xeb"/>
+                                            <constraint firstAttribute="width" constant="50" id="fRX-Te-OSv"/>
+                                            <constraint firstAttribute="height" constant="50" id="jvm-jk-LcQ"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="Tr"/>
+                                        <state key="normal" image="TrGray"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="37f-gL-T2V"/>
-                                    <constraint firstAttribute="bottom" secondItem="dAW-Yu-mlA" secondAttribute="bottom" constant="8" id="DJa-KV-CtU"/>
-                                    <constraint firstAttribute="bottom" secondItem="lvm-lb-HSu" secondAttribute="bottom" constant="8" id="DKz-h0-T46"/>
-                                    <constraint firstItem="lvm-lb-HSu" firstAttribute="leading" secondItem="dAW-Yu-mlA" secondAttribute="trailing" constant="8" id="Lpi-TR-WMp"/>
-                                    <constraint firstAttribute="height" constant="64" id="MOL-wz-OQE"/>
-                                    <constraint firstItem="dAW-Yu-mlA" firstAttribute="centerX" secondItem="4XV-hP-lRX" secondAttribute="centerX" constant="-87.5" id="Qf5-gT-Wth"/>
-                                    <constraint firstItem="uba-PK-wbh" firstAttribute="leading" secondItem="lvm-lb-HSu" secondAttribute="trailing" constant="8" id="Y6m-Ru-lH0"/>
-                                    <constraint firstItem="uba-PK-wbh" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="gSB-LX-uKo"/>
-                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="leading" secondItem="uba-PK-wbh" secondAttribute="trailing" constant="8" id="klU-CE-efG"/>
-                                    <constraint firstItem="lvm-lb-HSu" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="lFD-1w-J0e"/>
-                                    <constraint firstAttribute="bottom" secondItem="uba-PK-wbh" secondAttribute="bottom" constant="8" id="o57-zF-gXa"/>
-                                    <constraint firstItem="dAW-Yu-mlA" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="oZV-qV-bip"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ncr-jy-dxv" secondAttribute="bottom" constant="8" id="z4e-Aa-dm4"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAW-Yu-mlA" secondAttribute="bottom" constant="8" id="0zH-hf-JMe"/>
+                                    <constraint firstItem="lvm-lb-HSu" firstAttribute="leading" secondItem="dAW-Yu-mlA" secondAttribute="trailing" constant="8" id="3qk-8g-Cqc"/>
+                                    <constraint firstAttribute="bottom" secondItem="uba-PK-wbh" secondAttribute="bottom" constant="8" id="4Q0-j7-P2f"/>
+                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="leading" secondItem="uba-PK-wbh" secondAttribute="trailing" constant="8" id="8tf-qD-TWM"/>
+                                    <constraint firstItem="uba-PK-wbh" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="Nrt-uJ-6mf"/>
+                                    <constraint firstItem="dAW-Yu-mlA" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="PTQ-u5-jN4"/>
+                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="centerY" secondItem="4XV-hP-lRX" secondAttribute="centerY" constant="-1" id="Qn6-d9-rrK"/>
+                                    <constraint firstAttribute="height" constant="64" id="SEo-nq-LH5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ncr-jy-dxv" secondAttribute="bottom" constant="8" id="ULL-mb-HSG"/>
+                                    <constraint firstItem="lvm-lb-HSu" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="ZTN-QO-2yP"/>
+                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="top" constant="6" id="hyN-0g-Ry8"/>
+                                    <constraint firstItem="Ncr-jy-dxv" firstAttribute="centerX" secondItem="4XV-hP-lRX" secondAttribute="centerX" constant="86.5" id="mvf-UZ-GCY"/>
+                                    <constraint firstItem="uba-PK-wbh" firstAttribute="leading" secondItem="lvm-lb-HSu" secondAttribute="trailing" constant="8" id="tFN-wa-06q"/>
+                                    <constraint firstAttribute="bottom" secondItem="lvm-lb-HSu" secondAttribute="bottom" constant="8" id="zQ0-TF-17d"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IBx-P3-Pcq" firstAttribute="top" secondItem="4XV-hP-lRX" secondAttribute="bottom" constant="95" id="Ajr-LN-WzC"/>
-                            <constraint firstAttribute="trailing" secondItem="4XV-hP-lRX" secondAttribute="trailing" id="Awg-xu-VLd"/>
-                            <constraint firstItem="4XV-hP-lRX" firstAttribute="leading" secondItem="xGF-j2-uEg" secondAttribute="leading" id="EAP-hh-aRg"/>
+                            <constraint firstItem="4XV-hP-lRX" firstAttribute="leading" secondItem="xGF-j2-uEg" secondAttribute="leading" id="9RJ-Rn-vcC"/>
                             <constraint firstItem="t6h-K1-MRB" firstAttribute="leading" secondItem="xGF-j2-uEg" secondAttribute="leading" id="Har-Iu-Ymz"/>
                             <constraint firstItem="IBx-P3-Pcq" firstAttribute="top" secondItem="t6h-K1-MRB" secondAttribute="bottom" id="KVX-0A-1zW"/>
                             <constraint firstItem="t6h-K1-MRB" firstAttribute="top" secondItem="xGF-j2-uEg" secondAttribute="top" id="UqU-3k-NX6"/>
                             <constraint firstAttribute="trailing" secondItem="t6h-K1-MRB" secondAttribute="trailing" id="os0-GD-aGc"/>
+                            <constraint firstItem="4XV-hP-lRX" firstAttribute="centerX" secondItem="xGF-j2-uEg" secondAttribute="centerX" id="ra3-Y0-Z3B"/>
+                            <constraint firstAttribute="trailing" secondItem="4XV-hP-lRX" secondAttribute="trailing" id="wIb-5X-s8h"/>
+                            <constraint firstItem="4XV-hP-lRX" firstAttribute="centerY" secondItem="xGF-j2-uEg" secondAttribute="centerY" constant="206.5" id="yQa-c5-kyL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAr" destination="uba-PK-wbh" id="CcU-jJ-h1g"/>
+                        <outlet property="btnEn" destination="dAW-Yu-mlA" id="M3Q-7E-5sz"/>
+                        <outlet property="btnIr" destination="lvm-lb-HSu" id="XqN-2l-8zx"/>
+                        <outlet property="btnTr" destination="Ncr-jy-dxv" id="KOg-sO-chy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7b-IT-OaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,10 +366,10 @@
         <image name="1" width="320" height="568"/>
         <image name="2" width="320" height="568"/>
         <image name="3" width="320" height="568"/>
-        <image name="Ar" width="128" height="128"/>
-        <image name="En" width="128" height="128"/>
+        <image name="ArGray" width="128" height="128"/>
+        <image name="EnGray" width="128" height="128"/>
         <image name="Fa" width="128" height="128"/>
-        <image name="Tr" width="128" height="128"/>
+        <image name="TrGray" width="128" height="128"/>
         <image name="icon_main_connection_status_local" width="24" height="24"/>
         <image name="lay_icon_alarm" width="24" height="24"/>
     </resources>

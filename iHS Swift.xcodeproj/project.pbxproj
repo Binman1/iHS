@@ -148,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */,
-				5B06B6991DD35F0A004E9877 /* TopBar.swift */,
-				5B06B69B1DD36199004E9877 /* TopBar.xib */,
+				5BBA15B91DD61E5E00983D23 /* TopBar */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,8 +156,8 @@
 		5B06B6901DD34882004E9877 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5BCDCD671DD47FE000CC3372 /* Section 2 */,
 				5BCDCD5E1DD47FCB00CC3372 /* Section 1 */,
+				5BCDCD671DD47FE000CC3372 /* Section 2 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -183,6 +182,15 @@
 				EEDA152C1DD33AC0007D1F3F /* Info.plist */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		5BBA15B91DD61E5E00983D23 /* TopBar */ = {
+			isa = PBXGroup;
+			children = (
+				5B06B6991DD35F0A004E9877 /* TopBar.swift */,
+				5B06B69B1DD36199004E9877 /* TopBar.xib */,
+			);
+			name = TopBar;
 			sourceTree = "<group>";
 		};
 		5BCDCD5E1DD47FCB00CC3372 /* Section 1 */ = {
@@ -274,12 +282,12 @@
 		EEDA151F1DD33AC0007D1F3F /* iHS Swift */ = {
 			isa = PBXGroup;
 			children = (
-				EE0D95E61DD45909004581C4 /* assets */,
 				5B06B6911DD3488A004E9877 /* Model */,
 				5B06B6901DD34882004E9877 /* Controller */,
 				5B06B68F1DD3487B004E9877 /* View */,
 				EEDA15271DD33AC0007D1F3F /* Assets.xcassets */,
 				5B06B6921DD34893004E9877 /* Support */,
+				EE0D95E61DD45909004581C4 /* assets */,
 			);
 			path = "iHS Swift";
 			sourceTree = "<group>";

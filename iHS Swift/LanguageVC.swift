@@ -6,15 +6,25 @@
 //  Copyright © 2016 Ali Zare Sh. All rights reserved.
 //
 
+
+/*
+ Arash : Section1 - Language View Controller
+ */
+
 import UIKit
 
 class LanguageVC: UIViewController {
     
+    @IBOutlet weak var btnEn: UIButton!
+    @IBOutlet weak var btnIr: UIButton!
+    @IBOutlet weak var btnAr: UIButton!
+    @IBOutlet weak var btnTr: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setGestures()
+        
         
         
     }
@@ -25,8 +35,12 @@ class LanguageVC: UIViewController {
     }
     
     
+    
+
+    
+    
     /// Set Edge Gestures
-    func setGestures() {
+     func setGestures() {
         let rightGestureScreen = UIPanGestureRecognizer(target: self, action: #selector(goToWelcomeVC))
         
         view.addGestureRecognizer(rightGestureScreen)
@@ -34,7 +48,7 @@ class LanguageVC: UIViewController {
     }
     
     ///selector func
-    func goToWelcomeVC(sender : UIPanGestureRecognizer) {
+     func goToWelcomeVC(sender : UIPanGestureRecognizer) {
         let transition = sender.translationInView(self.view)
         
         if transition.x < 0 {

@@ -6,6 +6,10 @@
 //  Copyright © 2016 Ali Zare Sh. All rights reserved.
 //
 
+/*
+ Arash : Section1 - Register View Controller
+ */
+
 import UIKit
 
 class RegisterVC: UIViewController {
@@ -21,6 +25,8 @@ class RegisterVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    /// Set Edge Gestures
     func setGestures() {
         let leftGestureScreen = UIPanGestureRecognizer(target: self, action: #selector(goToWelcomeVC))
         view.addGestureRecognizer(leftGestureScreen)

@@ -6,6 +6,11 @@
 //  Copyright © 2016 Ali Zare Sh. All rights reserved.
 //
 
+
+/*
+ Arash : Section2 - Class For Managing UITabbarController in Section 2
+ */
+
 import UIKit
 
 class SecondPageTBC: UITabBarController {
@@ -28,7 +33,7 @@ class SecondPageTBC: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /// Set Tabbar Height
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         var tabFrame = self.tabBar.frame
@@ -54,7 +59,7 @@ class SecondPageTBC: UITabBarController {
         
     }
     
-    /// Set Tabbar Item Titles
+    /// Set Tabbar Item Titles For Each Language.
     func setItemNames(nameArray : [String]) {
         if let count = self.tabBar.items?.count {
             for i in 0...(count-1) {
