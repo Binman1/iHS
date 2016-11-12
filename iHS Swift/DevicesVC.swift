@@ -6,6 +6,11 @@
 //  Copyright © 2016 Ali Zare Sh. All rights reserved.
 //
 
+/*
+ Arash : Section2 - Devices View Controller
+ */
+
+
 import UIKit
 
 class DevicesVC: UIViewController {
