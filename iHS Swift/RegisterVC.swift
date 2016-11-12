@@ -14,6 +14,9 @@ import UIKit
 
 class RegisterVC: UIViewController {
     
+    @IBOutlet weak var edtRegisterName: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setGestures()
@@ -26,6 +29,11 @@ class RegisterVC: UIViewController {
     }
     
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesBegan(touches, withEvent: event)
+        view.endEditing(true)
+    }
+    
     /// Set Edge Gestures
     func setGestures() {
         let leftGestureScreen = UIPanGestureRecognizer(target: self, action: #selector(goToWelcomeVC))
@@ -36,15 +44,28 @@ class RegisterVC: UIViewController {
     func goToWelcomeVC(sender : UIPanGestureRecognizer) {
         let transition = sender.translationInView(self.view)
         if transition.x > 0 {
-        dismissViewControllerAnimated(true, completion: nil)
+            dismissViewControllerAnimated(true, completion: nil)
         }
+    }
+    
+    /// Dismiss keyboard after tap on view.
+    func dismissKeyboard() {
+        view.endEditing(true)
+        
     }
     
     
     /// Register Button
     @IBAction func btnRegister(sender: UIButton) {
-        
-        
+        if edtRegisterName.text?.characters.count > 0 {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let barcodeVC = storyBoard.instantiateViewControllerWithIdentifier("barcodeVC") as! BarcodeVC
+            var transitionStyle = UIModalTransitionStyle.FlipHorizontal
+            barcodeVC.modalTransitionStyle = transitionStyle
+            self.presentViewController(barcodeVC, animated: true, completion: nil)
+        }else {
+            print("Error")
+        }
     }
     
     
