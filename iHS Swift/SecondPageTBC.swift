@@ -23,7 +23,7 @@ class SecondPageTBC: UITabBarController {
         
         selectItemImage()
         setUpTabBar()
-//        setItemNames(DBManager.getTranslationOfSentences(SentencesID: [1 , 9 , 10 , 4]))
+        setItemNames(DBManager.getTranslationOfSentences(SentencesID: [1 , 9 , 10 , 4]))
         
         
     }
