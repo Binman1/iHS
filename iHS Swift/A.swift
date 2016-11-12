@@ -32,7 +32,7 @@ func GetDBFromPath () -> FMDatabase {
 }
 
 /// Language ID Selected By User
-let SELECTEDLANGID = -1
+var SELECTEDLANGID = -1
 
 /// Language ID FOR DB
 struct LangID {
@@ -46,4 +46,10 @@ struct LangID {
 /// Print everything to console logs
 func Printer(object : AnyObject) {
     print(object)
+}
+
+
+/// A function for Set language ID From db to global variable
+func SetLangIDToVar(id : Int) {
+    SELECTEDLANGID = id
 }
