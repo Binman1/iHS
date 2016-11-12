@@ -16,7 +16,10 @@ class BarcodeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "2")!)
+        setGestures()
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,6 +27,20 @@ class BarcodeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    /// Arash : Set gestures.
+    func setGestures() {
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(goToRegisterVC))
+        view.addGestureRecognizer(pan)
+    }
+    
+    /// Arash : dismiss BarcodeVC and go to RegisterVC.
+    func goToRegisterVC(sender : UIPanGestureRecognizer) {
+        let transition = sender.translationInView(self.view)
+        if transition.x > 0 {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
     
     
     

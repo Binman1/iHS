@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         
-        // BinMan1 : Set selected language id from db
-        SetLangIDToVar(DBManager.getLanguageID())
+        /// BinMan1 : Set selected language id from db
+//        SetLangIDToVar(DBManager.getLanguageID())
         
         return true
     }
