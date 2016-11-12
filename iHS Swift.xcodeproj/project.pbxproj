@@ -10,6 +10,10 @@
 		2566916F5A3B6A68D81AC50A /* libPods-iHS SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CC00DA651E7762CE8EF54B /* libPods-iHS SwiftUITests.a */; };
 		5B06B69A1DD35F0A004E9877 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06B6991DD35F0A004E9877 /* TopBar.swift */; };
 		5B06B69C1DD36199004E9877 /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B06B69B1DD36199004E9877 /* TopBar.xib */; };
+		5B6247C11DD7007700760F10 /* CellRooms.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B6247C01DD7007700760F10 /* CellRooms.xib */; };
+		5B6247C31DD700BB00760F10 /* CellRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6247C21DD700BB00760F10 /* CellRooms.swift */; };
+		5B6247C51DD700D500760F10 /* SectionRooms.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B6247C41DD700D500760F10 /* SectionRooms.xib */; };
+		5B6247C71DD700E800760F10 /* SectionRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6247C61DD700E800760F10 /* SectionRooms.swift */; };
 		5BCDCD5D1DD47FAE00CC3372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */; };
 		5BCDCD631DD47FDE00CC3372 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCD5F1DD47FDE00CC3372 /* LanguageVC.swift */; };
 		5BCDCD641DD47FDE00CC3372 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCD601DD47FDE00CC3372 /* WelcomeVC.swift */; };
@@ -55,6 +59,10 @@
 		02749164C035E008FF644075 /* Pods-iHS SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHS SwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHS SwiftUITests/Pods-iHS SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B06B6991DD35F0A004E9877 /* TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		5B06B69B1DD36199004E9877 /* TopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		5B6247C01DD7007700760F10 /* CellRooms.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellRooms.xib; sourceTree = "<group>"; };
+		5B6247C21DD700BB00760F10 /* CellRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRooms.swift; sourceTree = "<group>"; };
+		5B6247C41DD700D500760F10 /* SectionRooms.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionRooms.xib; sourceTree = "<group>"; };
+		5B6247C61DD700E800760F10 /* SectionRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRooms.swift; sourceTree = "<group>"; };
 		5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5BCDCD5F1DD47FDE00CC3372 /* LanguageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		5BCDCD601DD47FDE00CC3372 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5BCDCD5C1DD47FAE00CC3372 /* Main.storyboard */,
+				5B6247BD1DD7002600760F10 /* Rooms */,
 				5BBA15B91DD61E5E00983D23 /* TopBar */,
 			);
 			name = View;
@@ -182,6 +191,33 @@
 				EEDA152C1DD33AC0007D1F3F /* Info.plist */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		5B6247BD1DD7002600760F10 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				5B6247BF1DD7004400760F10 /* Cell */,
+				5B6247BE1DD7003500760F10 /* Section */,
+			);
+			name = Rooms;
+			sourceTree = "<group>";
+		};
+		5B6247BE1DD7003500760F10 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				5B6247C41DD700D500760F10 /* SectionRooms.xib */,
+				5B6247C61DD700E800760F10 /* SectionRooms.swift */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
+		5B6247BF1DD7004400760F10 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B6247C01DD7007700760F10 /* CellRooms.xib */,
+				5B6247C21DD700BB00760F10 /* CellRooms.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		5BBA15B91DD61E5E00983D23 /* TopBar */ = {
@@ -433,6 +469,8 @@
 				5BCDCD5D1DD47FAE00CC3372 /* Main.storyboard in Resources */,
 				EEDA15281DD33AC0007D1F3F /* Assets.xcassets in Resources */,
 				5B06B69C1DD36199004E9877 /* TopBar.xib in Resources */,
+				5B6247C51DD700D500760F10 /* SectionRooms.xib in Resources */,
+				5B6247C11DD7007700760F10 /* CellRooms.xib in Resources */,
 				EE0D95E81DD45952004581C4 /* IHS15.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +629,8 @@
 				5BCDCD711DD47FF600CC3372 /* SettingVC.swift in Sources */,
 				EE0D95EA1DD45AD1004581C4 /* A.swift in Sources */,
 				5BCDCD651DD47FDE00CC3372 /* RegisterVC.swift in Sources */,
+				5B6247C31DD700BB00760F10 /* CellRooms.swift in Sources */,
+				5B6247C71DD700E800760F10 /* SectionRooms.swift in Sources */,
 				5BCDCD6E1DD47FF600CC3372 /* FavoritesVC.swift in Sources */,
 				5BCDCD661DD47FDE00CC3372 /* BarcodeVC.swift in Sources */,
 				5BCDCD6F1DD47FF600CC3372 /* DevicesVC.swift in Sources */,
