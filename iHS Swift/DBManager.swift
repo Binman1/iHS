@@ -20,7 +20,7 @@ class DBManager {
         do {
             var resultStringArray = Array<String>()
             for id in ids {
-                let result = try db.executeQuery("SELECT * FROM Translation WHERE Translation.LangID = %d AND Translation.SentenseID = %d", values: [SELECTEDLANGID , id])
+                let result = try db.executeQuery("SELECT * FROM Translation WHERE Translation.LangID = \(SELECTEDLANGID) AND Translation.SentenseID = \(id)", values: nil)
                 if result.next() {
                     resultStringArray.append(result.stringForColumn("SentenseText"))
                 }
@@ -42,7 +42,7 @@ class DBManager {
         db.open()
         do {
             var LangID : Int = Int()
-            let result = try db.executeQuery("SELECT * FROM Settings WHERE type = LanguageID", values: nil)
+            let result = try db.executeQuery("SELECT * FROM Settings WHERE type = 'LanguageID'", values: nil)
             if result.next() {
                 LangID = Int(result.intForColumn("value"))
             }
@@ -61,7 +61,7 @@ class DBManager {
         let db = GetDBFromPath()
         db.open()
         do {
-            try db.executeUpdate("UPDATE Settings SET value = %d WHERE type = LanguageID", values: [id])
+            try db.executeUpdate("UPDATE Settings SET value = %d WHERE type = 'LanguageID'", values: [id])
         } catch let error as NSError {
             Printer("DBManager Set Language ID Error : \(error.debugDescription)")
         }
