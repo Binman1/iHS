@@ -23,7 +23,7 @@ class SecondPageTBC: UITabBarController {
         
         selectItemImage()
         setUpTabBar()
-        setItemNames(["1" , "2" , "3" , "4"])
+        setItemNames(DBManager.getTranslationOfSentences(SentencesID: [1 , 9 , 10 , 4]))
         
         
     }
@@ -60,7 +60,7 @@ class SecondPageTBC: UITabBarController {
     }
     
     /// Set Tabbar Item Titles For Each Language.
-    func setItemNames(nameArray : [String]) {
+    func setItemNames(nameArray : Array<String>) {
         if let count = self.tabBar.items?.count {
             for i in 0...(count-1) {
                 self.tabBar.items?[i].title = nameArray[i]
