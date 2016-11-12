@@ -13,7 +13,7 @@ import Foundation
     BinMan1 : Class For managing the DataBase
  */
 class DBManager {
-    /// BinMan1 : Get Some Translation of Sentense 
+    /// BinMan1 : Get Some Translation of Sentense
     class func getTranslationOfSentences(SentencesID ids : [Int]) -> Array<String> {
         let db = GetDBFromPath()
         db.open()
@@ -42,7 +42,7 @@ class DBManager {
         db.open()
         do {
             var LangID : Int = Int()
-            let result = try db.executeQuery("SELECT * FROM Setting WHERE type = LanguageID", values: nil)
+            let result = try db.executeQuery("SELECT * FROM Settings WHERE type = LanguageID", values: nil)
             if result.next() {
                 LangID = Int(result.intForColumn("value"))
             }
