@@ -23,11 +23,11 @@ let WIDTHPHONE = UIScreen.mainScreen().bounds.width
 
 
 /// Name of DB
-let DBNAME = "iHS15.sqlite"
+let DBNAME = "IHS15.sqlite"
 
 /// Get DB From db path for all uses 
 func GetDBFromPath () -> FMDatabase {
-    let path = NSTemporaryDirectory() + "/" + DBNAME
+    let path = NSBundle.mainBundle().resourcePath?.stringByAppendingString("/\(DBNAME)")
     return FMDatabase(path: path)
 }
 
